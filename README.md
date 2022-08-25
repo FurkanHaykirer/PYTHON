@@ -5,16 +5,26 @@ Python Temel Proje
 1.Soru
 
 l = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+
 lflat = []
 def flat(n):
+
     for i in n:
+    
         if isinstance(i, list):
+        
             flat(i)
+            
         else:
+        
             lflat.append(i)
+            
     return lnew
+    
 flat(l)
+
 print(lflat)
+
 
 
 
